@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box div img{
+			margin: 0px;
+			padding: 0px;
+		}
+		.wall{
+			width: 50px;
+			height: 50px;
+			background: red;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+		.box{
+			width: 100%;
+			height: 100%;
+			background:lightblue;
+			position: relative;
+		}
+		.gameover{
+			width: 200px;
+			height: 100px;
+			background-color: grey;
+			position: fixed;
+			left: 50%;
+			top: 50%;
+			margin-left: -100px;
+			margin-top: -75px;
+			z-index: 10;
+			display: none;
+			color: white;
+			font-size: 20px;
+			/* line-height: 100px; */
+			text-align: center;
+		}
+		.mary{
+			/* transition: 1s; */
+		}
+		/* 向加一个背景层使页面变灰 */
+	</style>
+</head>
+<body>
+	
+	<div class="box">
+		<div class="gameover">游戏结束！😤</b><div class="goldcount">金币总数为0</div></div>
+	</div>
+	<script src="game.js"></script>
+</body>
+</html>
